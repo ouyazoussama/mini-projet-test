@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="15.911" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Registration" name="Inscription avec un identifiant déjà existant" time="15.503">
+<system-out><![CDATA[
+Given je suis sur la page d'inscription.....................................passed
+When je saisis l'identifiant "testuser".....................................passed
+And je saisis l'email "testuser@example.com"................................passed
+And je saisis le mot de passe "Test@1234"...................................passed
+And je confirme le mot de passe "Test@1234".................................passed
+And j'accepte les conditions................................................passed
+And je clique sur le bouton Register........................................passed
+Then je devrais voir le message d'erreur "User name already exists".........passed
+]]></system-out>
+</testcase>
+</testsuite>

@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Sample Test Suite" tests="2" failures="1" errors="0" skipped="0">
-    <testcase classname="LoginTests" name="Test login with valid credentials" time="1.234"/>
-    <testcase classname="LoginTests" name="Test login with invalid credentials" time="1.567">
-        <failure message="Login failed">Expected error message not shown</failure>
-    </testcase>
-</testsuite>
