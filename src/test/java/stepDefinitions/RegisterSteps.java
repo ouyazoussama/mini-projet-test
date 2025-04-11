@@ -2,6 +2,7 @@ package stepDefinitions;
 
 import io.cucumber.java.en.*;
 import org.testng.Assert;
+import pages.HomePage;
 import pages.RegisterPage;
 
 import static setup.SetUp.driver;
@@ -9,9 +10,13 @@ import static setup.SetUp.driver;
 public class RegisterSteps {
 
     RegisterPage registerPage = new RegisterPage();
+    HomePage homePage = new HomePage();
 
     @Given("je suis sur la page d'inscription")
     public void je_suis_sur_la_page_d_inscription() {
+        homePage.clickSignIn();
+        homePage.clickRegister();
+
 
     }
 

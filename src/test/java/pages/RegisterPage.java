@@ -25,6 +25,9 @@ public class RegisterPage extends Tools {
     @FindBy(id = "register_btn")
     private WebElement registerButton;
 
+    @FindBy(xpath ="//input[@name='passwordRegisterPage']//following-sibling::label")
+    private WebElement pwdLabel;
+
     @FindBy(xpath = "//label[@data-ng-show='!registerSuccess']")
     private WebElement errorMsg;
 
@@ -65,4 +68,9 @@ public class RegisterPage extends Tools {
         }
         return errorMsg.getText();
     }
+
+    public void verifierMssdErreur(String mssdErreur) {
+        checkElement(pwdLabel,mssdErreur);
+    }
+
 }

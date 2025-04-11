@@ -1,6 +1,269 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="15.911" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Registration" name="Inscription avec un identifiant déjà existant" time="15.503">
+<testsuite name="Cucumber" time="633.222" tests="21" skipped="0" failures="3" errors="0">
+<testcase classname="User Registration" name="Successful account creation - #1.1" time="29.619">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id='speakersImg']&quot;}
+  (Session info: chrome=135.0.7049.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [75e9d085533b510e45f5b28f3d461c73, findElement {value=//div[@id='speakersImg'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53123}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53123/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 75e9d085533b510e45f5b28f3d461c73">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='speakersImg']"}
+  (Session info: chrome=135.0.7049.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [75e9d085533b510e45f5b28f3d461c73, findElement {value=//div[@id='speakersImg'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53123}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53123/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 75e9d085533b510e45f5b28f3d461c73
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at stepDefinitions.Background.iChooseACategory(Background.java:112)
+	at ✽.I choose a category "Speakers"(file:///C:/Users/oouyaz/IdeaProjects/Mini-Projet-BPI/src/test/resources/features/SignIn.feature:29)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I am on the homepage of Advantage Online Shopping.....................passed
+And I click on the "User" icon in the top navigation bar....................passed
+And I click on "Create new account".........................................passed
+When I fill in the "Username" field with "testfddfghfg_28"..................passed
+And I fill in the "Email" field with "alex7@gmail.com"......................passed
+And I fill in the "Password" field with "12345Az"...........................passed
+And I fill in the "Confirm Password" field with "12345Az"...................passed
+And I fill in the "First Name" field with "Alex"............................passed
+And I fill in the "Last Name" field with "Lavar"............................passed
+And I fill in the "Phone Number" field with "0600123456"....................passed
+And I select "Marocco" from the "Country" dropdown..........................passed
+And I fill in the "City" field with "Rabat".................................passed
+And I fill in the "Address" field with "123 Rue rabat"......................passed
+And I fill in the "State / Province / Region" field with "Rabat"............passed
+And I fill in the "Postal Code" field with "10000"..........................passed
+And I check the "I agree to the terms and conditions" checkbox..............passed
+And I click on the "Register" button........................................passed
+Then I should be redirected to the homepage.................................passed
+And I should see my username "testfddfghfg_28" in the top navigation bar....passed
+And I choose a category "Speakers"..........................................failed
+And I choose a product......................................................skipped
+And I add a product to the cart.............................................skipped
+And I enter on the "Cart" icon in the top navigation bar....................skipped
+And I remove all items from the cart........................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="User Registration" name="Successful account creation - #1.2" time="19.326">
+<failure type="org.openqa.selenium.ElementClickInterceptedException" message="element click intercepted: Element &lt;a href=&quot;javascript:void(0)&quot; role=&quot;link&quot; class=&quot;create-new-account ng-scope&quot; translate=&quot;CREATE_NEW_ACCOUNT&quot; data-ng-click=&quot;createNewAccount()&quot;&gt;...&lt;/a&gt; is not clickable at point (640, 345). Other element would receive the click: &lt;div class=&quot;loader&quot; style=&quot;display: block; opacity: 1;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=135.0.7049.85)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ac090d096bd969665f303825ff13ada4, clickElement {id=f.C65C94929A9074A6BAF635F4C18BFCE5.d.9D1E95528B708E711C9EAD646B1423C3.e.38}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53250}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53250/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ac090d096bd969665f303825ff13ada4)] -&gt; xpath: //a[contains(text(),'CREATE NEW ACCOUNT')]]
+Session ID: ac090d096bd969665f303825ff13ada4">
+<![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="javascript:void(0)" role="link" class="create-new-account ng-scope" translate="CREATE_NEW_ACCOUNT" data-ng-click="createNewAccount()">...</a> is not clickable at point (640, 345). Other element would receive the click: <div class="loader" style="display: block; opacity: 1;">...</div>
+  (Session info: chrome=135.0.7049.85)
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ac090d096bd969665f303825ff13ada4, clickElement {id=f.C65C94929A9074A6BAF635F4C18BFCE5.d.9D1E95528B708E711C9EAD646B1423C3.e.38}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53250}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53250/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ac090d096bd969665f303825ff13ada4)] -> xpath: //a[contains(text(),'CREATE NEW ACCOUNT')]]
+Session ID: ac090d096bd969665f303825ff13ada4
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source)
+	at pages.LoginRegisterSuccess.clickCreateNewAccount(LoginRegisterSuccess.java:97)
+	at stepDefinitions.Background.i_click_on_create_new_account(Background.java:45)
+	at ✽.I click on "Create new account"(file:///C:/Users/oouyaz/IdeaProjects/Mini-Projet-BPI/src/test/resources/features/SignIn.feature:10)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I am on the homepage of Advantage Online Shopping.....................passed
+And I click on the "User" icon in the top navigation bar....................passed
+And I click on "Create new account".........................................failed
+When I fill in the "Username" field with "john_bipe_456"....................skipped
+And I fill in the "Email" field with "john.bipe@email.com"..................skipped
+And I fill in the "Password" field with "123456Bg"..........................skipped
+And I fill in the "Confirm Password" field with "123456Bg"..................skipped
+And I fill in the "First Name" field with "John"............................skipped
+And I fill in the "Last Name" field with "Bip"..............................skipped
+And I fill in the "Phone Number" field with "0600765432"....................skipped
+And I select "France" from the "Country" dropdown...........................skipped
+And I fill in the "City" field with "Paris".................................skipped
+And I fill in the "Address" field with "456 Main St"........................skipped
+And I fill in the "State / Province / Region" field with "Paris"............skipped
+And I fill in the "Postal Code" field with "10001"..........................skipped
+And I check the "I agree to the terms and conditions" checkbox..............skipped
+And I click on the "Register" button........................................skipped
+Then I should be redirected to the homepage.................................skipped
+And I should see my username "john_bipe_456" in the top navigation bar......skipped
+And I choose a category "Speakers"..........................................skipped
+And I choose a product......................................................skipped
+And I add a product to the cart.............................................skipped
+And I enter on the "Cart" icon in the top navigation bar....................skipped
+And I remove all items from the cart........................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="User Registration" name="Successful account creation - #1.3" time="39.311">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id='speakersImg']&quot;}
+  (Session info: chrome=135.0.7049.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cb77b0874b169ae22c7690d656ef8af6, findElement {value=//div[@id='speakersImg'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53369}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53369/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cb77b0874b169ae22c7690d656ef8af6">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='speakersImg']"}
+  (Session info: chrome=135.0.7049.85)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.30.0', revision: '509c7f17cc*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '24'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cb77b0874b169ae22c7690d656ef8af6, findElement {value=//div[@id='speakersImg'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.85, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53369}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53369/devtoo..., se:cdpVersion: 135.0.7049.85, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cb77b0874b169ae22c7690d656ef8af6
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at stepDefinitions.Background.iChooseACategory(Background.java:112)
+	at ✽.I choose a category "Speakers"(file:///C:/Users/oouyaz/IdeaProjects/Mini-Projet-BPI/src/test/resources/features/SignIn.feature:29)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I am on the homepage of Advantage Online Shopping.....................passed
+And I click on the "User" icon in the top navigation bar....................passed
+And I click on "Create new account".........................................passed
+When I fill in the "Username" field with "roberto_112"......................passed
+And I fill in the "Email" field with "roberto@email.com"....................passed
+And I fill in the "Password" field with "Qwerty123".........................passed
+And I fill in the "Confirm Password" field with "Qwerty123".................passed
+And I fill in the "First Name" field with "Roberto".........................passed
+And I fill in the "Last Name" field with "Martinez".........................passed
+And I fill in the "Phone Number" field with "0600894567"....................passed
+And I select "Spain" from the "Country" dropdown............................passed
+And I fill in the "City" field with "Madrid"................................passed
+And I fill in the "Address" field with "1010 Av de Madrid"..................passed
+And I fill in the "State / Province / Region" field with "Madrid"...........passed
+And I fill in the "Postal Code" field with "28001"..........................passed
+And I check the "I agree to the terms and conditions" checkbox..............passed
+And I click on the "Register" button........................................passed
+Then I should be redirected to the homepage.................................passed
+And I should see my username "roberto_112" in the top navigation bar........passed
+And I choose a category "Speakers"..........................................failed
+And I choose a product......................................................skipped
+And I add a product to the cart.............................................skipped
+And I enter on the "Cart" icon in the top navigation bar....................skipped
+And I remove all items from the cart........................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Ajouter un produit au panier" name="Ajouter un article au panier avec une quantité valide" time="21.162">
+<system-out><![CDATA[
+Given Je suis sur la page d'accueil.........................................passed
+When Je navigue vers la catégorie des tablettes.............................passed
+And Je sélectionne un produit...............................................passed
+And Je tente d'ajouter 5 articles au panier.................................passed
+And Je clique sur valider...................................................passed
+Then L'icône du panier doit afficher 5 comme nombre d'articles..............passed
+]]></system-out>
+</testcase>
+<testcase classname="Ajouter un produit au panier" name="Ajouter un article au panier avec une quantité supérieure au stock disponible" time="24.12">
+<system-out><![CDATA[
+Given Je suis sur la page d'accueil.........................................passed
+When Je navigue vers la catégorie des tablettes.............................passed
+And Je sélectionne un produit...............................................passed
+And Je tente d'ajouter 15 articles au panier................................passed
+And je clique sur valider...................................................passed
+Then Je devrais voir un message disant "Oops! We only have 10 in stock. We updated your order accordingly".passed
+]]></system-out>
+</testcase>
+<testcase classname="Ajouter un produit au panier" name="[TEST AUTO] Ajout des produits - #1.1" time="40.208">
+<system-out><![CDATA[
+Given l'utilisateur est sur la page "home"..................................passed
+When il clique sur la categorie choisie "SPEAKERS"..........................passed
+And il clique sur le produit choisie dans la categorie "Bose Soundlink Bluetooth Speaker III".passed
+And il clique sur le bouton "ADD TO CART"...................................passed
+And je clique sur l'icone de panier.........................................passed
+Then je verifie que le produit est ajouté dans le panier "BOSE SOUNDLINK BLUETOOTH SPEAKER III".passed
+]]></system-out>
+</testcase>
+<testcase classname="Ajouter un produit au panier" name="[TEST AUTO] Ajout des produits - #1.2" time="39.675">
+<system-out><![CDATA[
+Given l'utilisateur est sur la page "home"..................................passed
+When il clique sur la categorie choisie "TABLETS"...........................passed
+And il clique sur le produit choisie dans la categorie "HP ElitePad 1000 G2 Tablet".passed
+And il clique sur le bouton "ADD TO CART"...................................passed
+And je clique sur l'icone de panier.........................................passed
+Then je verifie que le produit est ajouté dans le panier "HP ELITEPAD 1000 G2 TABLET".passed
+]]></system-out>
+</testcase>
+<testcase classname="Ajouter un produit au panier" name="[TEST AUTO] Ajout des produits - #1.3" time="38.655">
+<system-out><![CDATA[
+Given l'utilisateur est sur la page "home"..................................passed
+When il clique sur la categorie choisie "HEADPHONES"........................passed
+And il clique sur le produit choisie dans la categorie "Beats Studio 2 Over-Ear Matte Black Headphones".passed
+And il clique sur le bouton "ADD TO CART"...................................passed
+And je clique sur l'icone de panier.........................................passed
+Then je verifie que le produit est ajouté dans le panier "BEATS STUDIO 2 OVER-EAR MATTE BLACK HEADPHONES".passed
+]]></system-out>
+</testcase>
+<testcase classname="Éditer la quantité dans le panier d'achat (suppression d'éléments)" name="Supprimer des éléments du panier - #1.1" time="36.422">
+<system-out><![CDATA[
+Étant donné que j'ai "2" casques noirs dans mon panier......................passed
+Quand je navigue vers mon panier............................................passed
+Et je clique sur "Modifier" un produit......................................passed
+Et je diminue la quantité à "1" casques.....................................passed
+Alors je vois "1" casques dans mon panier...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Éditer la quantité dans le panier d'achat (suppression d'éléments)" name="Supprimer des éléments du panier - #1.2" time="50.584">
+<system-out><![CDATA[
+Étant donné que j'ai "3" casques noirs dans mon panier......................passed
+Quand je navigue vers mon panier............................................passed
+Et je clique sur "Modifier" un produit......................................passed
+Et je diminue la quantité à "2" casques.....................................passed
+Alors je vois "2" casques dans mon panier...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Registration" name="Inscription avec un identifiant déjà existant" time="29.011">
 <system-out><![CDATA[
 Given je suis sur la page d'inscription.....................................passed
 When je saisis l'identifiant "testuser".....................................passed
@@ -10,6 +273,111 @@ And je confirme le mot de passe "Test@1234".................................pass
 And j'accepte les conditions................................................passed
 And je clique sur le bouton Register........................................passed
 Then je devrais voir le message d'erreur "User name already exists".........passed
+]]></system-out>
+</testcase>
+<testcase classname="Registration" name="Créer un compte avec un mot de passe invalide - #1.1" time="26.535">
+<system-out><![CDATA[
+Given l'utilisateur est sur la page Register................................passed
+When il remplit le champ Username avec "jamila".............................passed
+And il remplit le champ email avec "durand.jean75@gmail.com"................passed
+And il remplit le champ mot de passe avec "123".............................passed
+And il remplit le champ Confirmation du mot de passe avec "123".............passed
+Then le message d'erreur affiché doit être "Use 4 character or longer"......passed
+]]></system-out>
+</testcase>
+<testcase classname="Registration" name="Créer un compte avec un mot de passe invalide - #1.2" time="37.732">
+<system-out><![CDATA[
+Given l'utilisateur est sur la page Register................................passed
+When il remplit le champ Username avec "hajar"..............................passed
+And il remplit le champ email avec "hajar-5857@yopmail.com".................passed
+And il remplit le champ mot de passe avec "AZERTY123456789".................passed
+And il remplit le champ Confirmation du mot de passe avec "AZERTY123456789".passed
+Then le message d'erreur affiché doit être "Use maximum 12 character".......passed
+]]></system-out>
+</testcase>
+<testcase classname="Registration" name="Créer un compte avec un mot de passe invalide - #1.3" time="46.585">
+<system-out><![CDATA[
+Given l'utilisateur est sur la page Register................................passed
+When il remplit le champ Username avec "marie"..............................passed
+And il remplit le champ email avec "marie-9317@yopmail.com".................passed
+And il remplit le champ mot de passe avec "123456"..........................passed
+And il remplit le champ Confirmation du mot de passe avec "123456"..........passed
+Then le message d'erreur affiché doit être "One lower letter required"......passed
+]]></system-out>
+</testcase>
+<testcase classname="Registration" name="Créer un compte avec un mot de passe invalide - #1.4" time="25.779">
+<system-out><![CDATA[
+Given l'utilisateur est sur la page Register................................passed
+When il remplit le champ Username avec "marie"..............................passed
+And il remplit le champ email avec "marie-9317@yopmail.com".................passed
+And il remplit le champ mot de passe avec "haj123456".......................passed
+And il remplit le champ Confirmation du mot de passe avec "haj123456".......passed
+Then le message d'erreur affiché doit être "One upper letter required"......passed
+]]></system-out>
+</testcase>
+<testcase classname="Registration" name="Créer un compte avec un mot de passe invalide - #1.5" time="20.712">
+<system-out><![CDATA[
+Given l'utilisateur est sur la page Register................................passed
+When il remplit le champ Username avec "marie"..............................passed
+And il remplit le champ email avec "marie-9317@yopmail.com".................passed
+And il remplit le champ mot de passe avec "Azertty".........................passed
+And il remplit le champ Confirmation du mot de passe avec "Azertty".........passed
+Then le message d'erreur affiché doit être "One number required"............passed
+]]></system-out>
+</testcase>
+<testcase classname="Registration" name="Inscription avec un format d'email erroné - #1.1" time="27.207">
+<system-out><![CDATA[
+Given je suis sur la page d'inscription.....................................passed
+And je saisis mon username "houdaifa1"......................................passed
+When je saisis une adresse email avec format invalide "test@"...............passed
+And je saisi mon password "Abcde@123".......................................passed
+And je saisi encore  le méme password "Abcde@123"...........................passed
+Then un message d'erreur s'affiche indique que Votre adresse email n'est pas correctement formatée.passed
+And le boutton <Enregistrer> doit etre desavctivé...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Registration" name="Inscription avec un format d'email erroné - #1.2" time="19.286">
+<system-out><![CDATA[
+Given je suis sur la page d'inscription.....................................passed
+And je saisis mon username "Houdaifa12".....................................passed
+When je saisis une adresse email avec format invalide "test@@example".......passed
+And je saisi mon password "Abcde@1234"......................................passed
+And je saisi encore  le méme password "Abcde@1234"..........................passed
+Then un message d'erreur s'affiche indique que Votre adresse email n'est pas correctement formatée.passed
+And le boutton <Enregistrer> doit etre desavctivé...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Registration" name="Inscription avec un format d'email erroné - #1.3" time="20.249">
+<system-out><![CDATA[
+Given je suis sur la page d'inscription.....................................passed
+And je saisis mon username "Houdaifa123"....................................passed
+When je saisis une adresse email avec format invalide "test@example.".......passed
+And je saisi mon password "Abcde@12345".....................................passed
+And je saisi encore  le méme password "Abcde@12345".........................passed
+Then un message d'erreur s'affiche indique que Votre adresse email n'est pas correctement formatée.passed
+And le boutton <Enregistrer> doit etre desavctivé...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Registration" name="Inscription avec un format d'email erroné - #1.4" time="20.945">
+<system-out><![CDATA[
+Given je suis sur la page d'inscription.....................................passed
+And je saisis mon username "Houdaifa1234"...................................passed
+When je saisis une adresse email avec format invalide "@example.com"........passed
+And je saisi mon password "Abcde@123456"....................................passed
+And je saisi encore  le méme password "Abcde@123456"........................passed
+Then un message d'erreur s'affiche indique que Votre adresse email n'est pas correctement formatée.passed
+And le boutton <Enregistrer> doit etre desavctivé...........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Registration" name="Inscription avec un format d'email erroné - #1.5" time="18.987">
+<system-out><![CDATA[
+Given je suis sur la page d'inscription.....................................passed
+And je saisis mon username "Houdaifa987"....................................passed
+When je saisis une adresse email avec format invalide "test@.com"...........passed
+And je saisi mon password "Abcd@1234567"....................................passed
+And je saisi encore  le méme password "Abcd@1234567"........................passed
+Then un message d'erreur s'affiche indique que Votre adresse email n'est pas correctement formatée.passed
+And le boutton <Enregistrer> doit etre desavctivé...........................passed
 ]]></system-out>
 </testcase>
 </testsuite>

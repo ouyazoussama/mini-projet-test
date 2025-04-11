@@ -1,5 +1,7 @@
 package utils;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -11,6 +13,7 @@ import java.time.Duration;
 public class Tools extends SetUp {
 
     private final Duration TIMEOUT = Duration.ofSeconds(10);
+    private final int time=20;
 
     public void clickElement(WebElement element) {
         WebDriverWait wait = new WebDriverWait(driver, TIMEOUT);
@@ -36,5 +39,28 @@ public class Tools extends SetUp {
 
     public boolean isElementEnabled(WebElement element) {
         return element.isEnabled();
+    }
+
+    public void zoomOut(double zoomLevel) {
+        ((JavascriptExecutor) driver).executeScript("document.body.style.zoom='" + zoomLevel + "'");
+    }
+
+    public void waitForLoaderToDisappear(By loaderLocator) {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(loaderLocator));
+    }
+
+    public void ElementIsDisplayed(WebElement el)
+    {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(time));
+        wait.until(ExpectedConditions.visibilityOf(el));
+        Assert.assertTrue(el.isDisplayed());
+
+    }
+
+    public void ElementIsDisabled(WebElement el)
+    {
+        Assert.assertFalse(el.isEnabled());
+
     }
 }
