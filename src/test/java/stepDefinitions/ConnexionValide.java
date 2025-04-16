@@ -1,6 +1,7 @@
 package stepDefinitions;
 
 import io.cucumber.java.fr.Alors;
+import io.cucumber.java.fr.Et;
 import io.cucumber.java.fr.Etantdonnéque;
 import io.cucumber.java.fr.Quand;
 import pages.Index;
@@ -13,17 +14,10 @@ public class ConnexionValide {
         login = new Login();
         index = new Index();
     }
-    @Etantdonnéque("je suis sur la page de connexion")
-    public void je_suis_sur_la_page_de_connexion() {
 
-    }
     @Quand("je saisi mon username {string}")
     public void je_saisi_mon_username(String string) {
         login.insertUserName(string);
-    }
-    @Quand("je saisi mon password {string}")
-    public void je_saisi_mon_password(String string) {
-        login.insertPassword(string);
     }
     @Quand("je clique sur le boutton login")
     public void je_clique_sur_le_boutton_login() {
@@ -34,4 +28,9 @@ public class ConnexionValide {
         index.checkCurrentUrl();
     }
 
+
+    @Et("je saisi mon password {string}")
+    public void jeSaisiMonPassword(String arg0) {
+        login.insertPassword(arg0);
+    }
 }

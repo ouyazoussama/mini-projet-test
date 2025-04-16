@@ -46,4 +46,10 @@ public class Login extends Tools {
     public void clickLogin(){
         clickElement(loginButton);
     }
+
+    public void assertCurrentUrl() {
+        Assert.assertTrue(driver.getCurrentUrl().contains("login"));}
+
+
+
 }
