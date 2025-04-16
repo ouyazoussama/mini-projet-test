@@ -35,7 +35,7 @@ public class Login extends Tools {
        insertElement(userNameButton,username);
     }
     public void insertPassword(String password){
-        insertElement(userNameButton,password);
+        insertElement(passwordButton,password);
     }
     public void getUsernameErrorMessage(){
         Assert.assertTrue(userNameErrorMessage.isDisplayed());
