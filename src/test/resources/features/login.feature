@@ -6,7 +6,7 @@ Fonctionnalité: : test de connexion
     Quand je saisi mon username "Admin"
     Et je saisi mon password "admin123"
     Et je clique sur le boutton login
-
+  @ValidLogin
   Scénario: test de connexion avec des identifiants valides
 
     Alors l'application me redireger vers la page index
