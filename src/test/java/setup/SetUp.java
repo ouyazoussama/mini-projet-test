@@ -17,7 +17,7 @@ public class SetUp {
         driver = new ChromeDriver();
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         driver.manage().window().maximize();
-        driver.get("https://advantageonlineshopping.com");
+        driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
     }
 
     @After

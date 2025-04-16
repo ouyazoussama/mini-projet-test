@@ -5,7 +5,9 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 
 @CucumberOptions(
         features = "src/test/resources/features",
-        glue = {"stepDefinitions","setup" })
+        glue = {"stepDefinitions","setup" },
+        tags = "  @emptyLogin"
+)
 
 public class RunCucumberTest extends AbstractTestNGCucumberTests {
 }
