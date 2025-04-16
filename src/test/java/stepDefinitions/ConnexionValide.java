@@ -13,10 +13,7 @@ public class ConnexionValide {
         login = new Login();
         index = new Index();
     }
-    @Etantdonnéque("je suis sur la page de connexion")
-    public void je_suis_sur_la_page_de_connexion() {
 
-    }
     @Quand("je saisi mon username {string}")
     public void je_saisi_mon_username(String string) {
         login.insertUserName(string);
