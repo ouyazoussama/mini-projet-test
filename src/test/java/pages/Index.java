@@ -16,6 +16,8 @@ public class Index extends Tools {
 
     @FindBy(xpath = "//a[text() = 'Logout']")
     WebElement logoutButton;
+    @FindBy(xpath = "//button[contains(@class , 'oxd-button-primary')]")
+    WebElement createButton;
 
     public void checkCurrentUrl() {
         String url = driver.getCurrentUrl();
