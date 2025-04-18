@@ -9,6 +9,7 @@ import org.testng.Assert;
 import setup.SetUp;
 
 import java.time.Duration;
+import java.util.List;
 
 public class Tools extends SetUp {
 
@@ -63,4 +64,14 @@ public class Tools extends SetUp {
         Assert.assertFalse(el.isEnabled());
 
     }
+
+    public List<WebElement> findElementsWithWait(String txt) {
+        By locator = By.xpath(txt);
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(time));
+        // Attendre que la liste contienne au moins un élément
+        wait.until(driver -> !driver.findElements(locator).isEmpty());
+
+        return driver.findElements(locator);
+    }
+
 }
